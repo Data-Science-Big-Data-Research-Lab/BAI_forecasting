@@ -38,6 +38,6 @@ To use the datasets in their original form, you need to merge the split files. B
 
     ls -lh Datasets/RCPMerged
 
-* Important
+## Important
 * Ensure that you have write permissions in the Datasets/RCPMerged folder.
 * The merging process will overwrite existing files with the same name in the Datasets/RCPMerged directory. If you want to keep the original files, back them up before running the merge script.
