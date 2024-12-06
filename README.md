@@ -17,15 +17,17 @@ To use the datasets in their original form, you need to merge the split files. B
 
 2. Run the following command to merge the parts into their original files:
 
-    for file in Datasets_splitted/*_part_1; do
+
+
+       for file in Datasets_splitted/*_part_1; do
    
-        original_file=$(basename "$file" _part_1)
-   
-        cat Datasets_splitted/"$original_file"_part_* > "$original_file"
-   
-        echo "Merged $original_file"
-   
-    done
+           original_file=$(basename "$file" _part_1)
+      
+           cat Datasets_splitted/"$original_file"_part_* > "$original_file"
+      
+           echo "Merged $original_file"
+         done
+    
 
 ## Explanation of the Command
 * The script finds all files in Datasets_splitted/ ending with _part_1.
